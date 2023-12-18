@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mo</title>
-</head>
-<body>
-    
-</body>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عقار جبال السروات</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="user-page.js"></script>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <img class="w-100 h-100 r-half mr-auto d-block" src="images/logo1.png">
+        <h3 class="p-relative txt-c mt-0 f-font">عقار جبال السروات</h3>
+        <ul>
+          <li>
+            <a class="active d-flex align-center fs-14 c-black rad-6 p-10 f-font" href="home.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14  c-black rad-6 p-10 f-font" href="add.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>إضافة قطعة</span>
+            </a>
+          </li>
+
+          <button id="logout-button" class="b-none w-full   d-flex align-center bg-white cursor fs-14 c-black p-10 f-font" onclick="sure_logout()">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>تسجيل الخروج</span>
+          
+          </button>
+
+          <!-- <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10 f-font" href="home.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li> -->
+          
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head p-sticky bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10 f-font" type="search" placeholder="بحث.." />
+          </div>
+          <div class="icons d-flex align-center">
+            
+          </div>
+        </div>
+        <!-- End Head -->        
+        <h1 class="p-relative f-font">الرئيسية</h1>
+        <!-- Start Projects Table -->
+        <div class="projects p-20 bg-white rad-10 m-20 ">
+          <h2 class="mt-0 mb-20 f-font">القطع</h2>
+          <div class="responsive-table ">
+            <table class="fs-15 w-full">
+              <thead>
+                <tr>
+                  <td>رقم القطعة</td>
+                  <td>موقع القطعة</td>
+                  <td>اسم المالك</td>
+                  <td>اسم البائع </td>
+                  <td>رقم الهاتف</td>
+                  <td>السعر</td>
+                  <td>اسم الساعي</td>
+                  <td>وصف القطعة</td>
+                  <td>حالة القطعة</td>
+                  <td>ملاحظات</td>
+                  
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>G10-50</td>
+                  <td>ش-30</td>
+                  <td>محمد ناجي علي العنسي</td>
+                  <td>محمد صالح</td>
+                  <td>
+                    775757534 <br> 775757566
+                  </td>
+                  <td>
+                    $5500
+                    
+                  </td>
+                   <td>
+                  علي صالح
+                  </td>
+                  <td>
+                    حر
+                    </td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white">شاغر</span>
+                    </td>
+                  <td>
+                    الارض قوة القوة من الأخر الأرض لقققققطة 
+                    </td>  
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Projects Table -->
+      </div>
+      
+    </div>
+  </body>
 </html>
